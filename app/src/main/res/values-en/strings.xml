@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Playlist Maker</string>
+    <string name="question_word">A question:</string>
+    <string name="mark" translatable="false">2/10</string>
+</resources>
