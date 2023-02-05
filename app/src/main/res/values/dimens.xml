@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="medium_padding">17dp</dimen>
-    <dimen name="text_up">20sp</dimen>
+    <dimen name="first_layout_text">25sp</dimen>
+    <dimen name="buttons_radius">15dp</dimen>
+    <dimen name="icon_distance">12dp</dimen>
+    <dimen name="button_height">220dp</dimen>
+    <dimen name="main_layout_top_bottom_margin">8dp</dimen>
+    <dimen name="setting_items">18sp</dimen>
+    <dimen name="setting_layout_start_end_padding">18dp</dimen>
+    <dimen name="setting_layout_top_bottom_padding">21dp</dimen>
+    <dimen name="support_eye">31dp</dimen>
 </resources>
