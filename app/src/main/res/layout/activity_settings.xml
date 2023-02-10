@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    android:paddingStart="@dimen/layout_start_end_padding"
-    android:paddingEnd="@dimen/layout_start_end_padding">
+    android:paddingHorizontal="@dimen/layout_four_sided_padding">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -15,10 +15,10 @@
             android:id="@+id/back_arrow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/layout_top_bottom_padding"
+            android:layout_marginTop="@dimen/layout_four_sided_padding"
             android:contentDescription="@string/arrow_back"
-            android:src="@drawable/arrow_left"
-            android:gravity="start"/>
+            android:gravity="start"
+            android:src="@drawable/arrow_left" />
 
         <TextView
             android:layout_width="match_parent"
@@ -35,13 +35,13 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="60dp"
-            android:layout_marginBottom="@dimen/layout_top_bottom_padding"
+            android:layout_marginBottom="@dimen/layout_four_sided_padding"
             android:backgroundTint="@color/white"
             android:fontFamily="@font/ys_regular"
             android:letterSpacing="0"
@@ -54,83 +54,45 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:layout_marginTop="46dp" />
+            android:gravity="center_horizontal" />
     </FrameLayout>
 
-    <FrameLayout
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginVertical="@dimen/layout_four_sided_padding"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/ys_regular"
+        android:letterSpacing="0"
+        android:text="@string/share_app"
+        android:textColor="@color/black"
+        android:textSize="@dimen/setting_items"
+        app:drawableEndCompat="@drawable/share" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_marginTop="@dimen/layout_top_bottom_padding"
-            android:layout_marginBottom="@dimen/layout_top_bottom_padding"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/ys_regular"
-            android:letterSpacing="0"
-            android:text="@string/share_app"
-            android:textColor="@color/black"
-            android:textSize="@dimen/setting_items" />
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/share_img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginTop="@dimen/layout_top_bottom_padding"
-            android:src="@drawable/share" />
-    </FrameLayout>
-
-    <FrameLayout
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/layout_four_sided_padding"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/ys_regular"
+        android:letterSpacing="0"
+        android:text="@string/support"
+        android:textColor="@color/black"
+        android:textSize="@dimen/setting_items"
+        app:drawableEndCompat="@drawable/support_icon" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/layout_top_bottom_padding"
-            android:layout_marginBottom="@dimen/layout_top_bottom_padding"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/ys_regular"
-            android:letterSpacing="0"
-            android:text="@string/support"
-            android:textColor="@color/black"
-            android:textSize="@dimen/setting_items" />
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/support"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginTop="22dp"
-            android:src="@drawable/support_icon" />
-    </FrameLayout>
-
-    <FrameLayout
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/layout_top_bottom_padding"
-            android:layout_marginBottom="@dimen/layout_top_bottom_padding"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/ys_regular"
-            android:letterSpacing="0"
-            android:text="@string/terms_of_use"
-            android:textColor="@color/black"
-            android:textSize="@dimen/setting_items" />
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/terms_img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginTop="24dp"
-            android:src="@drawable/arrow_right" />
-    </FrameLayout>
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/layout_four_sided_padding"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/ys_regular"
+        android:letterSpacing="0"
+        android:text="@string/terms_of_use"
+        android:textColor="@color/black"
+        android:textSize="@dimen/setting_items"
+        app:drawableEndCompat="@drawable/arrow_right" />
 
 </LinearLayout>

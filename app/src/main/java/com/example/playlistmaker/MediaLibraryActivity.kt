@@ -14,6 +14,7 @@ class MediaLibraryActivity : AppCompatActivity() {
         arrowBack.setOnClickListener {
             val arrowIntent = Intent(this, MainActivity::class.java)
             startActivity(arrowIntent)
+            finish()
         }
     }
 }
