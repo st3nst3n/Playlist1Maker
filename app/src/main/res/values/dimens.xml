@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="first_layout_text">25sp</dimen>
-    <dimen name="buttons_radius">15dp</dimen>
+    <dimen name="first_layout_text">24sp</dimen>
+    <dimen name="buttons_radius">16dp</dimen>
     <dimen name="icon_distance">12dp</dimen>
-    <dimen name="button_height">220dp</dimen>
     <dimen name="main_layout_top_bottom_margin">8dp</dimen>
-    <dimen name="setting_items">18sp</dimen>
-    <dimen name="layout_start_end_padding">18dp</dimen>
-    <dimen name="layout_top_bottom_padding">21dp</dimen>
+    <dimen name="setting_items">16sp</dimen>
+    <dimen name="layout_four_sided_padding">20dp</dimen>
 </resources>

@@ -18,14 +18,17 @@ class MainActivity : AppCompatActivity() {
         searchButton.setOnClickListener {
             val searchIntent = Intent(this, SearchActivity::class.java)
             startActivity(searchIntent)
+            finish()
         }
         libraryButton.setOnClickListener {
             val libraryIntent = Intent(this, MediaLibraryActivity::class.java)
             startActivity(libraryIntent)
+            finish()
         }
         settingsButton.setOnClickListener {
             val settingsIntent = Intent(this, SettingsActivity::class.java)
             startActivity(settingsIntent)
+            finish()
         }
     }
 }
