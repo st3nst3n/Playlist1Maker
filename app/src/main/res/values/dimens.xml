@@ -6,4 +6,6 @@
     <dimen name="main_layout_top_bottom_margin">8dp</dimen>
     <dimen name="setting_items">16sp</dimen>
     <dimen name="layout_four_sided_padding">20dp</dimen>
+    <dimen name="top_padding">16dp</dimen>
+    <dimen name="margin_start_subscreen_items">48dp</dimen>
 </resources>
