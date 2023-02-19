@@ -27,21 +27,25 @@
             style="@style/SettingsItemsDesign"
             android:layout_gravity="end"
             android:layout_marginVertical="0dp"
-            android:text="@string/dark_theme" />
+            android:text="@string/dark_theme"
+            android:theme="@style/Theme.PlaylistMaker"/>
     </FrameLayout>
 
     <TextView
+        android:id="@+id/shareButton"
         style="@style/SettingsItemsDesign"
         android:text="@string/share_app"
         app:drawableEndCompat="@drawable/share" />
 
     <TextView
+        android:id="@+id/supportButton"
         style="@style/SettingsItemsDesign"
         android:text="@string/support"
         app:drawableEndCompat="@drawable/support_icon" />
 
 
     <TextView
+        android:id="@+id/termsButton"
         style="@style/SettingsItemsDesign"
         android:text="@string/terms_of_use"
         app:drawableEndCompat="@drawable/arrow_right" />
