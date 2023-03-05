@@ -21,7 +21,7 @@ class SettingsActivity : AppCompatActivity() {
 
         val shareApp = findViewById<TextView>(R.id.shareButton)
         shareApp.setOnClickListener {
-            val shareText = "https://practicum.yandex.ru/profile/android-developer/"
+            val shareText = getString(R.string.link_to_the_course)
             val sendText = Intent(Intent.ACTION_SEND)
             sendText.putExtra(Intent.EXTRA_TEXT, shareText)
             sendText.type = "text/plain"
@@ -31,11 +31,11 @@ class SettingsActivity : AppCompatActivity() {
 
         val sendToSupport = findViewById<TextView>(R.id.supportButton)
         sendToSupport.setOnClickListener {
-            val lineTitle = "Сообщение разработчикам и разработчицам приложения Playlist Maker"
-            val lineMessage = "Спасибо разработчикам и разработчицам за крутое приложение!"
+            val lineTitle = getString(R.string.letter_title)
+            val lineMessage = getString(R.string.letter_body)
             val shareIntent = Intent(Intent.ACTION_SENDTO)
             shareIntent.data = Uri.parse("mailto:")
-            shareIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("master1origami@yandex.ru"))
+            shareIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf(getString(R.string.developer_mail)))
             shareIntent.putExtra(Intent.EXTRA_SUBJECT, lineTitle)
             shareIntent.putExtra(Intent.EXTRA_TEXT, lineMessage)
             startActivity(shareIntent)
@@ -44,7 +44,7 @@ class SettingsActivity : AppCompatActivity() {
         val readTerms = findViewById<TextView>(R.id.termsButton)
         readTerms.setOnClickListener {
             val openTerms = Intent(Intent.ACTION_VIEW)
-            openTerms.data = Uri.parse("https://yandex.ru/legal/practicum_offer/")
+            openTerms.data = Uri.parse(getString(R.string.practicum_offer))
             startActivity(openTerms)
         }
 

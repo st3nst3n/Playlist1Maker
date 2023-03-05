@@ -1,18 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/SubscreenDesign"
     tools:ignore="UnusedAttribute">
 
     <FrameLayout
         style="@style/wrap_match"
-        tools:ignore="ContentDescription" >
+        tools:ignore="ContentDescription">
 
-        <ImageView style="@style/ArrowBackDesign"
-            android:id="@+id/back_arrow"/>
+        <ImageView
+            android:id="@+id/back_arrow"
+            style="@style/ArrowBackDesign" />
 
-        <TextView style="@style/SubscreenItemsBackMainMenuDesign"
-            android:text="@string/search"/>
-
+        <TextView
+            style="@style/SubscreenItemsBackMainMenuDesign"
+            android:text="@string/search" />
     </FrameLayout>
-</LinearLayout>
+
+    <EditText
+        android:id="@+id/searchEditText"
+        style="@style/edit_search"
+        android:autofillHints="@string/search"
+        android:hint="@string/search"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLength="30"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/clear_button"
+        style="@style/search_clear_button"
+        android:contentDescription="@string/clear_string"
+        android:visibility="gone" />
+</FrameLayout>
