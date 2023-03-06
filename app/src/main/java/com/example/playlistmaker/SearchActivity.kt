@@ -2,7 +2,6 @@ package com.example.playlistmaker
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -10,20 +9,40 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
 
 class SearchActivity : AppCompatActivity() {
+
+    private lateinit var arrowBack: ImageView
+    private lateinit var inputEditText: EditText
+    private lateinit var clearButton: ImageView
+
+    companion object {
+        const val USER_INPUT = "USER_INPUT"
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.putString(USER_INPUT, inputEditText.text.toString())
+        super.onSaveInstanceState(outState)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        inputEditText.setText(savedInstanceState.getString(USER_INPUT))
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
 
-        val arrowBack = findViewById<ImageView>(R.id.back_arrow)
+        arrowBack = findViewById(R.id.back_arrow)
         arrowBack.setOnClickListener {
             val arrowIntent = Intent(this, MainActivity::class.java)
             startActivity(arrowIntent)
             finish()
         }
-        val inputEditText = findViewById<EditText>(R.id.searchEditText)
-        val clearButton = findViewById<ImageView>(R.id.clear_button)
+        inputEditText = findViewById(R.id.searchEditText)
+        clearButton = findViewById(R.id.clear_button)
         clearButton.setOnClickListener {
             inputEditText.setText("")
             it.hideKeyboard()
@@ -59,8 +78,9 @@ class SearchActivity : AppCompatActivity() {
 
     }
 
-    private fun View.hideKeyboard(){
-        val inputMethodManager = context.getSystemService(Context.INPUT_METHOD_SERVICE) as? InputMethodManager
+    private fun View.hideKeyboard() {
+        val inputMethodManager =
+            context.getSystemService(Context.INPUT_METHOD_SERVICE) as? InputMethodManager
         inputMethodManager?.hideSoftInputFromWindow(windowToken, 0)
     }
 }

@@ -25,7 +25,7 @@
         android:inputType="text"
         android:lines="1"
         android:maxLength="30"
-        tools:ignore="RtlSymmetry" />
+        tools:ignore="RtlSymmetry,DuplicateSpeakableTextCheck,TouchTargetSizeCheck,TextContrastCheck" />
 
     <ImageView
         android:id="@+id/clear_button"
