@@ -8,4 +8,10 @@
     <string name="arrow_back" translatable="false">arrow_back</string>
     <string name="support">Написать в поддержку</string>
     <string name="terms_of_use">Пользовательское соглашение</string>
+    <string name="link_to_the_course" translatable="false">https://practicum.yandex.ru/profile/android-developer/</string>
+    <string name="letter_title">Сообщение разработчикам и разработчицам приложения Playlist Maker</string>
+    <string name="letter_body">Спасибо разработчикам и разработчицам за крутое приложение!</string>
+    <string name="developer_mail" translatable="false">master1origami@yandex.ru</string>
+    <string name="practicum_offer" translatable="false">https://yandex.ru/legal/practicum_offer/</string>
+    <string name="clear_string">Очистить</string>
 </resources>

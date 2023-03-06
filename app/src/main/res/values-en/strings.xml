@@ -8,4 +8,7 @@
     <string name="support">Write to support</string>
     <string name="terms_of_use">Terms of Use</string>
     <string name="search">Search</string>
+    <string name="letter_title">Message to the Developers and Developers of the Playlist Maker App</string>
+    <string name="letter_body">Thank you developers and developers for a cool app!</string>
+    <string name="clear_string">Clear</string>
 </resources>
