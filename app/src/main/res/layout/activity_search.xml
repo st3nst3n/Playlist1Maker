@@ -2,24 +2,38 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/SubscreenDesign"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/layout_four_sided_padding"
     tools:ignore="UnusedAttribute">
 
     <FrameLayout
-        style="@style/wrap_match"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         tools:ignore="ContentDescription">
 
         <ImageView
             android:id="@+id/back_arrow"
-            style="@style/ArrowBackDesign" />
+            style="@style/ArrowBackDesign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_four_sided_padding" />
 
         <TextView
             style="@style/SubscreenItemsBackMainMenuDesign"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_start_subscreen_items"
+            android:layout_marginTop="@dimen/top_padding"
             android:text="@string/search" />
     </FrameLayout>
 
     <EditText
         android:id="@+id/searchEditText"
         style="@style/edit_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_search_height"
+        android:layout_marginVertical="@dimen/edit_search_margin_vertical"
         android:autofillHints="@string/search"
         android:hint="@string/search"
         android:inputType="text"
@@ -30,6 +44,10 @@
     <ImageView
         android:id="@+id/clear_button"
         style="@style/search_clear_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/clear_button_marginEnd"
+        android:layout_marginTop="@dimen/clear_button_marginTop"
         android:contentDescription="@string/clear_string"
         android:visibility="gone" />
 </FrameLayout>

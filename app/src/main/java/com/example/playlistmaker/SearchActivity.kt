@@ -39,7 +39,6 @@ class SearchActivity : AppCompatActivity() {
         arrowBack.setOnClickListener {
             val arrowIntent = Intent(this, MainActivity::class.java)
             startActivity(arrowIntent)
-            finish()
         }
         inputEditText = findViewById(R.id.searchEditText)
         clearButton = findViewById(R.id.clear_button)
