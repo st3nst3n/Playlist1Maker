@@ -6,4 +6,11 @@
     <dimen name="main_layout_top_bottom_margin">8dp</dimen>
     <dimen name="setting_items">16sp</dimen>
     <dimen name="layout_four_sided_padding">20dp</dimen>
+    <dimen name="top_padding">16dp</dimen>
+    <dimen name="margin_start_subscreen_items">48dp</dimen>
+    <dimen name="edit_search_height">36dp</dimen>
+    <dimen name="edit_search_margin_vertical">64dp</dimen>
+    <dimen name="search_draw_padding">8dp</dimen>
+    <dimen name="clear_button_marginTop">76dp</dimen>
+    <dimen name="clear_button_marginEnd">16dp</dimen>
 </resources>

@@ -2,91 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/light_blue"
-    android:orientation="vertical"
-    android:padding="16dp">
+    style="@style/LightOrDarkStyle"
+    tools:ignore="UnusedAttribute">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/ys_display_bold"
-        android:gravity="top"
-        android:letterSpacing="0"
-        android:text="@string/app_name"
-        android:textColor="@color/white"
-        android:textSize="@dimen/first_layout_text" />
+    <TextView style="@style/App_Name_Design"
+        android:text="@string/app_name" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="40dp"
-        android:orientation="vertical"
+        style="@style/LayoutBasic"
+        android:layout_marginTop="32dp"
         tools:context=".MainActivity">
 
         <Button
             android:id="@+id/search_button"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/ys_display_bold"
-            android:foreground="?attr/selectableItemBackground"
-            android:letterSpacing="0"
+            style="@style/MainScreenButtonsDesign"
             android:text="@string/search"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="@dimen/first_layout_text"
-            app:cornerRadius="@dimen/buttons_radius"
-            app:icon="@drawable/search"
-            app:iconGravity="textStart"
-            app:iconPadding="@dimen/icon_distance"
-            app:iconTint="@color/black"
-            tools:ignore="UnusedAttribute" />
+            app:icon="@drawable/search" />
 
         <Button
             android:id="@+id/library_button"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/main_layout_top_bottom_margin"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/ys_display_bold"
-            android:foreground="?attr/selectableItemBackground"
-            android:letterSpacing="0"
+            style="@style/MainScreenButtonsDesign"
             android:text="@string/media_library"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="@dimen/first_layout_text"
-            app:cornerRadius="@dimen/buttons_radius"
-            app:icon="@drawable/library"
-            app:iconGravity="textStart"
-            app:iconPadding="@dimen/icon_distance"
-            app:iconTint="@color/black"
-            tools:ignore="UnusedAttribute" />
+            app:icon="@drawable/library" />
 
         <Button
             android:id="@+id/settings_button"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/main_layout_top_bottom_margin"
-            android:layout_marginBottom="@dimen/main_layout_top_bottom_margin"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/ys_display_bold"
-            android:foreground="?attr/selectableItemBackground"
-            android:letterSpacing="0"
+            style="@style/MainScreenButtonsDesign"
             android:text="@string/settings"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="@dimen/first_layout_text"
-            app:cornerRadius="@dimen/buttons_radius"
-            app:icon="@drawable/settings"
-            app:iconGravity="textStart"
-            app:iconPadding="@dimen/icon_distance"
-            app:iconTint="@color/black"
-            tools:ignore="UnusedAttribute" />
+            app:icon="@drawable/settings" />
 
     </LinearLayout>
 </LinearLayout>

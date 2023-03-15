@@ -1,98 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical"
-    android:paddingHorizontal="@dimen/layout_four_sided_padding">
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SubscreenDesign"
+    tools:ignore="UnusedAttribute">
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        style="@style/wrap_match"
+        tools:ignore="ContentDescription">
 
         <ImageView
             android:id="@+id/back_arrow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/layout_four_sided_padding"
-            android:contentDescription="@string/arrow_back"
-            android:gravity="start"
-            android:src="@drawable/arrow_left" />
+            style="@style/ArrowBackDesign" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="48dp"
-            android:layout_marginTop="14dp"
-            android:fontFamily="@font/ys_display_bold"
-            android:letterSpacing="0"
-            android:text="@string/settings"
-            android:textColor="@color/black"
-            android:textSize="@dimen/first_layout_text" />
-
+            style="@style/SubscreenItemsBackMainMenuDesign"
+            android:text="@string/settings" />
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="@dimen/layout_four_sided_padding"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/ys_regular"
-            android:letterSpacing="0"
-            android:text="@string/dark_theme"
-            android:textColor="@color/black"
-            android:textSize="@dimen/setting_items" />
+        style="@style/wrap_match"
+        android:layout_marginTop="@dimen/margin_start_subscreen_items">
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/switch_theme"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/main_layout_top_bottom_margin"
+            style="@style/SettingsItemsDesign"
             android:layout_gravity="end"
-            android:gravity="center_horizontal" />
+            android:layout_marginVertical="0dp"
+            android:text="@string/dark_theme"
+            android:theme="@style/Theme.PlaylistMaker"/>
     </FrameLayout>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:layout_marginVertical="@dimen/layout_four_sided_padding"
-        android:backgroundTint="@color/white"
-        android:fontFamily="@font/ys_regular"
-        android:letterSpacing="0"
+        android:id="@+id/shareButton"
+        style="@style/SettingsItemsDesign"
         android:text="@string/share_app"
-        android:textColor="@color/black"
-        android:textSize="@dimen/setting_items"
         app:drawableEndCompat="@drawable/share" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="@dimen/layout_four_sided_padding"
-        android:backgroundTint="@color/white"
-        android:fontFamily="@font/ys_regular"
-        android:letterSpacing="0"
+        android:id="@+id/supportButton"
+        style="@style/SettingsItemsDesign"
         android:text="@string/support"
-        android:textColor="@color/black"
-        android:textSize="@dimen/setting_items"
         app:drawableEndCompat="@drawable/support_icon" />
 
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="@dimen/layout_four_sided_padding"
-        android:backgroundTint="@color/white"
-        android:fontFamily="@font/ys_regular"
-        android:letterSpacing="0"
+        android:id="@+id/termsButton"
+        style="@style/SettingsItemsDesign"
         android:text="@string/terms_of_use"
-        android:textColor="@color/black"
-        android:textSize="@dimen/setting_items"
         app:drawableEndCompat="@drawable/arrow_right" />
 
 </LinearLayout>
