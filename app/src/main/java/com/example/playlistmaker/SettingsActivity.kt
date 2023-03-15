@@ -16,7 +16,6 @@ class SettingsActivity : AppCompatActivity() {
         arrowBack.setOnClickListener {
             val arrowIntent = Intent(this, MainActivity::class.java)
             startActivity(arrowIntent)
-            finish()
         }
 
         val shareApp = findViewById<TextView>(R.id.shareButton)

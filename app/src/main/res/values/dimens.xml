@@ -13,4 +13,5 @@
     <dimen name="search_draw_padding">8dp</dimen>
     <dimen name="clear_button_marginTop">76dp</dimen>
     <dimen name="clear_button_marginEnd">16dp</dimen>
+    <dimen name="zero_size">0dp</dimen>
 </resources>

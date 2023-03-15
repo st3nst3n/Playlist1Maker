@@ -3,31 +3,47 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/LightOrDarkStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:ignore="UnusedAttribute">
 
-    <TextView style="@style/App_Name_Design"
+    <TextView
+        style="@style/App_Name_Design"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/app_name" />
 
     <LinearLayout
-        style="@style/LayoutBasic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         android:layout_marginTop="32dp"
         tools:context=".MainActivity">
 
         <Button
             android:id="@+id/search_button"
             style="@style/MainScreenButtonsDesign"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_size"
+            android:layout_marginTop="@dimen/main_layout_top_bottom_margin"
             android:text="@string/search"
             app:icon="@drawable/search" />
 
         <Button
             android:id="@+id/library_button"
             style="@style/MainScreenButtonsDesign"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_size"
+            android:layout_marginTop="@dimen/main_layout_top_bottom_margin"
             android:text="@string/media_library"
             app:icon="@drawable/library" />
 
         <Button
             android:id="@+id/settings_button"
             style="@style/MainScreenButtonsDesign"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_size"
+            android:layout_marginTop="@dimen/main_layout_top_bottom_margin"
             android:text="@string/settings"
             app:icon="@drawable/settings" />
 

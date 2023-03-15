@@ -3,43 +3,63 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/SubscreenDesign"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/layout_four_sided_padding"
     tools:ignore="UnusedAttribute">
 
     <FrameLayout
-        style="@style/wrap_match"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         tools:ignore="ContentDescription">
 
         <ImageView
             android:id="@+id/back_arrow"
-            style="@style/ArrowBackDesign" />
+            style="@style/ArrowBackDesign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_four_sided_padding" />
 
         <TextView
             style="@style/SubscreenItemsBackMainMenuDesign"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_start_subscreen_items"
+            android:layout_marginTop="@dimen/top_padding"
             android:text="@string/settings" />
     </FrameLayout>
 
     <FrameLayout
-        style="@style/wrap_match"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_start_subscreen_items">
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/switch_theme"
             style="@style/SettingsItemsDesign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:layout_marginVertical="0dp"
+            android:layout_marginVertical="@dimen/zero_size"
             android:text="@string/dark_theme"
-            android:theme="@style/Theme.PlaylistMaker"/>
+            android:theme="@style/Theme.PlaylistMaker" />
     </FrameLayout>
 
     <TextView
         android:id="@+id/shareButton"
         style="@style/SettingsItemsDesign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/layout_four_sided_padding"
         android:text="@string/share_app"
         app:drawableEndCompat="@drawable/share" />
 
     <TextView
         android:id="@+id/supportButton"
         style="@style/SettingsItemsDesign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/layout_four_sided_padding"
         android:text="@string/support"
         app:drawableEndCompat="@drawable/support_icon" />
 
@@ -47,6 +67,9 @@
     <TextView
         android:id="@+id/termsButton"
         style="@style/SettingsItemsDesign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/layout_four_sided_padding"
         android:text="@string/terms_of_use"
         app:drawableEndCompat="@drawable/arrow_right" />
 
