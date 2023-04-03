@@ -10,6 +10,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.RecyclerView
 
 class SearchActivity : AppCompatActivity() {
 
@@ -66,6 +67,47 @@ class SearchActivity : AppCompatActivity() {
             }
         }
         inputEditText.addTextChangedListener(simpleTextWatcher)
+
+
+        val trackAdapter = TrackAdapter(
+            arrayListOf(
+                Track(
+                    getString(R.string.track_name_1),
+                    getString(R.string.band_name_1),
+                    getString(R.string.track_time_1),
+                    getString(R.string.track_poster_1)
+                ),
+                Track(
+                    getString(R.string.track_name_2),
+                    getString(R.string.band_name_2),
+                    getString(R.string.track_time_2),
+                    getString(R.string.track_poster_2)
+                ),
+                Track(
+                    getString(R.string.track_name_3),
+                    getString(R.string.band_name_3),
+                    getString(R.string.track_time_3),
+                    getString(R.string.track_poster_3)
+                ),
+                Track(
+                    getString(R.string.track_name_4),
+                    getString(R.string.band_name_4),
+                    getString(R.string.track_time_4),
+                    getString(R.string.track_poster_4)
+                ),
+                Track(
+                    getString(R.string.track_name_5),
+                    getString(R.string.band_name_5),
+                    getString(R.string.track_time_5),
+                    getString(R.string.track_poster_5)
+                )
+            )
+        )
+
+        val trackList = findViewById<RecyclerView>(R.id.trackList)
+        trackList.adapter = trackAdapter
+
+
     }
 
     private fun clearButtonVisibility(s: CharSequence?): Int {

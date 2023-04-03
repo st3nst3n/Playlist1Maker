@@ -14,4 +14,11 @@
     <dimen name="clear_button_marginTop">76dp</dimen>
     <dimen name="clear_button_marginEnd">16dp</dimen>
     <dimen name="zero_size">0dp</dimen>
+    <dimen name="track_line_height">64dp</dimen>
+    <dimen name="indent_inside_track">4dp</dimen>
+    <dimen name="track_name">16sp</dimen>
+    <dimen name="band_name_and_duration">12sp</dimen>
+    <dimen name="track_arrow_distance">184dp</dimen>
+    <dimen name="poster_size">45dp</dimen>
+    <dimen name="recyclerView_marginTop">124dp</dimen>
 </resources>
