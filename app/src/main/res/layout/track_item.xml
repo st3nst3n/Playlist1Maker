@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trackLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingVertical="@dimen/search_draw_padding">
+
+    <ImageView
+        android:id="@+id/poster_id"
+        android:layout_width="@dimen/poster_size"
+        android:layout_height="@dimen/poster_size"
+        android:layout_gravity="center"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/placeholder" />
+
+    <LinearLayout
+        android:layout_width="@dimen/zero_size"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/search_draw_padding"
+        tools:ignore="InefficientWeight">
+
+        <TextView
+            android:id="@+id/track_name"
+            style="@style/trackNameStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/zero_size"
+            android:layout_marginBottom="@dimen/indent_inside_track"
+            android:layout_weight="1"
+            tools:ignore="InefficientWeight,NestedWeights"
+            tools:text="@string/tools_track_name" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/band_name"
+                style="@style/bandNameAndDurationTrack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="@string/tools_band_name" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingStart="@dimen/indent_inside_track"
+                android:paddingEnd="@dimen/indent_inside_track"
+                android:src="@drawable/ellipse_1"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/track_length"
+                style="@style/bandNameAndDurationTrack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                tools:text="@string/tools_track_time" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/track_selection"
+        style="@style/trackArrowStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>
