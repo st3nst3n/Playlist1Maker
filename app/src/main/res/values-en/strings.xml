@@ -13,4 +13,8 @@
     <string name="clear_string">Clear</string>
     <string name="tools_track_name">Veeeeeeryyyyy looooooooong traack naaaaaaaaaaaaame</string>
     <string name="tools_band_name">Veeeeeeryyyyy looooooooong baaaand naaaaaaaaaaaaame</string>
+    <string name="nothing_found">Nothing found</string>
+    <string name="no_internet">Internet connection problems</string>
+    <string name="download_failed">Download failed. Check your internet connection</string>
+    <string name="refresh">Refresh</string>
 </resources>

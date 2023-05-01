@@ -37,9 +37,11 @@
         android:layout_marginVertical="@dimen/edit_search_margin_vertical"
         android:autofillHints="@string/search"
         android:hint="@string/search"
+        android:imeOptions="actionDone"
         android:inputType="text"
         android:lines="1"
         android:maxLength="30"
+        android:singleLine="true"
         tools:ignore="RtlSymmetry,DuplicateSpeakableTextCheck,TouchTargetSizeCheck,TextContrastCheck" />
 
     <ImageView
@@ -60,4 +62,67 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/track_item" />
 
+    <LinearLayout
+        android:id="@+id/nothing_found"
+        style="@style/searchError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            style="@style/searchError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/somethingWrongText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_padding"
+            android:text="@string/nothing_found" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/no_internet"
+        style="@style/noInternetError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            style="@style/noInternetError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/somethingWrongText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/no_internet"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            style="@style/somethingWrongText"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:text="@string/download_failed"
+            android:textAlignment="center"
+            tools:ignore="UnusedAttribute" />
+
+        <Button
+            android:id="@+id/refresh_button"
+            style="@style/refreshButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
 </FrameLayout>
